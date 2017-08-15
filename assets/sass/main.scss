@@ -669,6 +669,13 @@ font-weight: 400;
 		}
 
 		.the-best-text{
+			position: absolute;
+			left: 80%;
+			padding-top: 2.5%;
+
+			img{
+				width: 190%;
+			}
 
 		}
 	}
@@ -696,9 +703,9 @@ font-weight: 400;
 			}
 
 	.media-player{
-		top: 10px;
-		width: 50%;
-		left: 25%;
+		top: 2%;
+		width: 30vw;
+		left: 30%;
 		opacity: .75;
     	border: 2px solid white;
 	}
@@ -708,18 +715,20 @@ font-weight: 400;
 			width: 100%;
 
 			h2{
-				font-size: 180px;
+				font-size: 12vw;
 
 				.tb1-left-animation{
 
 					position: absolute;
-				    left: -68%;
+				    left: -88%;
 				    top: 124%;
+
+				    
 
 				}
 
 				.tb1-right-animation{
-
+						width: 100%;
 					    position: absolute;
 					    right: -70%;
 					    top: 180%;
@@ -730,12 +739,55 @@ font-weight: 400;
 		}
 	}
 
+	.text-block-2{
+
+		h1{
+				font-size: 12vw;
+
+				.tb2-left-animation{
+					
+					position: relative;
+				    left: -88%;
+				    top: 124%;
+
+				    
+
+				}
+
+				.tb2-right-animation{
+						width: 100%;
+					    position: absolute;
+					    right: -100%;
+					    top: 180%;
+					
+
+				}
+			}
+	}
+
 	.text-block-4{
 		background-position: center;
 		padding-bottom: 95%;
+		overflow: hidden;
+
+
 		.tb4-text{
 			bottom: 0;
 			top: 50%;
+			position: absolute;
+
+			h3{
+				position: absolute;
+				right: -35%;
+				font-size: 12vw;
+			}
+
+			h1{
+				position: absolute;
+				left: -100%;
+				top: 100%;
+				font-size: 12vw;
+			}
 		}
 	}
 
@@ -749,6 +801,7 @@ font-weight: 400;
 
 
 			.year{
+					position: relative;
 				    width: 24.7%;
     				padding-bottom: 40%;
     				transition: all .8s;
@@ -771,6 +824,13 @@ font-weight: 400;
 					    
 					}
 			}
+
+			// .year-active{
+
+			// 	padding-right: 25%;;
+			// 	padding-bottom: 40%;
+
+			// }
 
 			.y1966{
 					background-color: RGBA(71, 21, 59, 1.00);
@@ -855,6 +915,12 @@ font-weight: 400;
 
 	.merch-sales-slider{
 		padding-bottom: 130%;
+
+		.merch-title{
+			h1{
+				margin-left: 2%;
+			}
+		}
 
 		.slider{
 			.right-arrow , .left-arrow{
@@ -999,6 +1065,18 @@ font-weight: 400;
 		    flex-direction: column;
 		    justify-content: center;
 		    align-items: center;
+
+		    // .custom-mix-media-title{
+		    // 	position: absolute;
+		    // 	left: 23%;
+			   //  top: 19%;
+			   //  width: 100%;
+		    // }
+
+		    // .custom-mix-media-text{
+		    // 	position: absolute;
+		    	
+		    // }
 
 		}
 

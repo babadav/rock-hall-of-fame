@@ -436,6 +436,12 @@ img {
 @media screen and (min-width: 766px) {
   nav .logo {
     width: 50%; }
+  nav .the-best-text {
+    position: absolute;
+    left: 80%;
+    padding-top: 2.5%; }
+    nav .the-best-text img {
+      width: 190%; }
   .band-drop-down {
     background-image: url(../../assets/img/landing-2.png);
     transition: .8s;
@@ -451,29 +457,52 @@ img {
     transform: translate(-50%, 17%);
     padding-bottom: 100vh; }
   .media-player {
-    top: 10px;
-    width: 50%;
-    left: 25%;
+    top: 2%;
+    width: 30vw;
+    left: 30%;
     opacity: .75;
     border: 2px solid white; }
   .text-block-1 .description-text {
     width: 100%; }
     .text-block-1 .description-text h2 {
-      font-size: 180px; }
+      font-size: 12vw; }
       .text-block-1 .description-text h2 .tb1-left-animation {
         position: absolute;
-        left: -68%;
+        left: -88%;
         top: 124%; }
       .text-block-1 .description-text h2 .tb1-right-animation {
+        width: 100%;
         position: absolute;
         right: -70%;
         top: 180%; }
+  .text-block-2 h1 {
+    font-size: 12vw; }
+    .text-block-2 h1 .tb2-left-animation {
+      position: relative;
+      left: -88%;
+      top: 124%; }
+    .text-block-2 h1 .tb2-right-animation {
+      width: 100%;
+      position: absolute;
+      right: -100%;
+      top: 180%; }
   .text-block-4 {
     background-position: center;
-    padding-bottom: 95%; }
+    padding-bottom: 95%;
+    overflow: hidden; }
     .text-block-4 .tb4-text {
       bottom: 0;
-      top: 50%; }
+      top: 50%;
+      position: absolute; }
+      .text-block-4 .tb4-text h3 {
+        position: absolute;
+        right: -35%;
+        font-size: 12vw; }
+      .text-block-4 .tb4-text h1 {
+        position: absolute;
+        left: -100%;
+        top: 100%;
+        font-size: 12vw; }
   .timeline-container {
     overflow: hidden; }
     .timeline-container .years {
@@ -481,6 +510,7 @@ img {
       flex-direction: row;
       justify-content: normal; }
       .timeline-container .years .year {
+        position: relative;
         width: 24.7%;
         padding-bottom: 40%;
         transition: all .8s; }
@@ -548,6 +578,8 @@ img {
         z-index: 9; }
   .merch-sales-slider {
     padding-bottom: 130%; }
+    .merch-sales-slider .merch-title h1 {
+      margin-left: 2%; }
     .merch-sales-slider .slider .right-arrow, .merch-sales-slider .slider .left-arrow {
       visibility: hidden; }
     .merch-sales-slider .slider .mi-wrap .splatter {
