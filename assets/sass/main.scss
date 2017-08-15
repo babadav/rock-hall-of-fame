@@ -156,7 +156,7 @@ font-weight: 400;
 
 	.text-block-1{
 		width: 100%;
-		padding-bottom: 2500px;
+		padding-bottom: 100vh;
 		position: relative;
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -330,7 +330,8 @@ font-weight: 400;
 				.y1982{
 					background-color: RGBA(220, 144, 72, 1.00);
 					background-image:url(../../assets/img/timeline-1982.png);
-					background-repeat: no-repeat;
+					background-repeat-y: no-repeat;
+					background-position-x: -400px;
 				}
 
 				.y1988{
@@ -343,6 +344,7 @@ font-weight: 400;
 					background-color: RGBA(242, 202, 96, 1.00);
 					background-image:url(../../assets/img/timeline-1994.png);
 					background-repeat: no-repeat;
+
 				}
 
 
@@ -407,6 +409,11 @@ font-weight: 400;
     					width: 100%;
     				}
     			}
+				.mi-wrap{
+				
+				.splatter-2, .splatter-3{
+				    	display: none;
+				    }
 
     			.splatter{
     				background-image: url(../../assets/img/splatter-sweatshirt.png);
@@ -432,6 +439,8 @@ font-weight: 400;
 
 				    
 
+				    
+
 					img{
 						width: 100%;
 					    position: relative;
@@ -443,7 +452,7 @@ font-weight: 400;
 
     		}
 				
-		}
+		}}
 	}
 
 		.custom-mix-container{
@@ -451,11 +460,14 @@ font-weight: 400;
 			top: 43%;
 			width: 100%;
 			
+			.download-now, .custom-mix-media-player{
+				visibility: hidden;
+			}
 
 			.custom-mix-title{
-				width: 100%;
+				width: 75%;
 				position: absolute;
-			    top: 207%;
+			    top: 132%;
 			    left: 25%;
 			    transform: translate(-11%, -50%);
 			    font-size: 59px;
@@ -463,8 +475,8 @@ font-weight: 400;
 
 			.custom-mix-text{
 				position: absolute;
-				top: 247%;
-    			left: 25%;
+				top: 155%;
+    			left: 28%;
     			transform: translate(-18%, -50%);
 			    font-size: 20px;
 			    text-align: center;
@@ -555,6 +567,18 @@ font-weight: 400;
 		background-size: cover;
 		padding-bottom: 931px;
 
+		.social-container-title-desktop{
+			visibility: hidden;
+		}
+
+		.social-form-container{
+			visibility: hidden;
+		}
+
+		.posted-container{
+			visibility: hidden;
+		}
+
 
 
 
@@ -599,18 +623,16 @@ font-weight: 400;
 			}
 		}
 
-		.to-subscribe , form{
-			position: relative;
-			top: 600px;
-			text-align: center;
-		}
-
 		.band-arrow-container{
 			position: absolute;
 		    display: flex;
-		    bottom: 470px;
+		    left: 50%;
+		    bottom: 34%;
+		    transform: translate(-50%,-50%);
+		    width: 100%;
 		    justify-content: space-around;
 		    align-items: flex-end;
+
 
 
 		    .left-arrow-white, .right-arrow-white{
@@ -658,6 +680,7 @@ font-weight: 400;
 			filter: blur(10px);
 			background-attachment: fixed;
     		background-size: cover;
+    		background-position: center;
 				
 				&.loaded{
 				filter: blur(0px);
@@ -666,24 +689,50 @@ font-weight: 400;
 
 	}
 	.band-name-banner{
-				left: 50%;
+				left: 48%;
 			    top: 50%;
-			    transform: translate(-50%,10%);
+			    transform: translate(-50%,17%);
+			    padding-bottom: 100vh;
 			}
 
 	.media-player{
 		top: 10px;
 		width: 50%;
 		left: 25%;
+		opacity: .75;
+    	border: 2px solid white;
 	}
 
 	.text-block-1{
 		.description-text{
 			width: 100%;
+
+			h2{
+				font-size: 180px;
+
+				.tb1-left-animation{
+
+					position: absolute;
+				    left: -68%;
+				    top: 124%;
+
+				}
+
+				.tb1-right-animation{
+
+					    position: absolute;
+					    right: -70%;
+					    top: 180%;
+					
+
+				}
+			}
 		}
 	}
 
 	.text-block-4{
+		background-position: center;
+		padding-bottom: 95%;
 		.tb4-text{
 			bottom: 0;
 			top: 50%;
@@ -691,28 +740,35 @@ font-weight: 400;
 	}
 
 	.timeline-container{
+		overflow: hidden;
 		.years{
-			width: 100%;
+			width: 200%;
 			flex-direction: row;
 			justify-content: normal;
-			flex-wrap: wrap;
+
+
 
 			.year{
 				    width: 24.7%;
     				padding-bottom: 40%;
     				transition: all .8s;
 
+    				
+
     				&:hover{
 
 						padding-right: 400px;
 						padding-bottom: 40%;
+
 					}
 
 					p{
 						transform: rotate(-90deg);
-					    font-size: 100px;
-					    top: 232%;
-					    position: relative;
+					    font-size: 132px;
+					    bottom: 7%;
+					    position: absolute;
+
+					    
 					}
 			}
 
@@ -721,6 +777,7 @@ font-weight: 400;
 					background-image:url(../../assets/img/timeline-1966-vert.png);
 					background-repeat: no-repeat;
 					background-size: cover;
+					z-index: 1;
 
 					
 				}
@@ -730,6 +787,7 @@ font-weight: 400;
 					background-image:url(../../assets/img/timeline-1968-vert.png);
 					background-repeat: no-repeat;
 					background-size: cover;
+					z-index: 2;
 
 					
 				}
@@ -738,6 +796,7 @@ font-weight: 400;
 					background-image:url(../../assets/img/timeline-1973-vert.png);
 					background-repeat: no-repeat;
 					background-size: cover;
+					z-index: 3;
 
 					
 
@@ -748,6 +807,7 @@ font-weight: 400;
 					background-image:url(../../assets/img/timeline-1975-vert.png);
 					background-repeat: no-repeat;
 					background-size: cover;
+					z-index: 4;
 				}
 
 				.y1976{
@@ -755,6 +815,7 @@ font-weight: 400;
 					background-image:url(../../assets/img/timeline-1976-vert.png);
 					background-repeat: no-repeat;
 					background-size: cover;
+					z-index: 5;
 				}
 
 				.y1980{
@@ -762,6 +823,7 @@ font-weight: 400;
 					background-image:url(../../assets/img/timeline-1980-vert.png);
 					background-repeat: no-repeat;
 					background-size: cover;
+					z-index: 6;
 				}
 
 				.y1982{
@@ -769,6 +831,8 @@ font-weight: 400;
 					background-image:url(../../assets/img/timeline-1982-vert.png);
 					background-repeat: no-repeat;
 					background-size: cover;
+					z-index: 7;
+					background-position-x: 0px;
 				}
 
 				.y1988{
@@ -776,6 +840,7 @@ font-weight: 400;
 					background-image:url(../../assets/img/timeline-1988-vert.png);
 					background-repeat: no-repeat;
 					background-size: cover;
+					z-index: 8;
 				}
 
 				.y1994{
@@ -783,21 +848,25 @@ font-weight: 400;
 					background-image:url(../../assets/img/timeline-1994-vert.png);
 					background-repeat: no-repeat;
 					background-size: cover;
+					z-index: 9;
 				}
 		}
 	}
 
 	.merch-sales-slider{
+		padding-bottom: 130%;
 
 		.slider{
 			.right-arrow , .left-arrow{
 				visibility: hidden;
 			}
+			.mi-wrap{
 			.splatter{
-				width: 47%;
+				width: 30%;
+				transform: translate(-144%, -50%);
 				.mi-1{
 					width: 56%;
-					top: 162%;
+					top: 135%;
 					
 				}
 			}
@@ -810,9 +879,10 @@ font-weight: 400;
 			    background-size: cover;
 			    background-position-y: -184;
 			    background-repeat: no-repeat;
-		        left: 92%;
+		        left: 62%;
 			    top: 64%;
-			    transform: translate(-73%,-16%);
+			    transform: translate(-73%,-29%);
+			    display: block;
 			
 
 				.mi-2{
@@ -822,10 +892,178 @@ font-weight: 400;
 
 				}
 			}
+
+			.splatter-3{
+					display: block;
+				    background-image: url(../../assets/img/splatter-sweatshirt.png);
+				    position: absolute;
+				    width: 29%;
+				    padding-bottom: 21%;
+				    background-size: cover;
+				    background-position-y: -184;
+				    background-repeat: no-repeat;
+				    left: 92%;
+				    top: 64%;
+				    transform: translate(-73%, -29%);
+
+				    .mi-3{
+					position: absolute;
+					left: 26%;
+				    top: 28%;
+
+				}
+			}
+		}
+	}}
+
+
+	.custom-mix-container{
+		width: 100%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+
+		.album-grid{
+
+			.album{
+				width: 15%;
+				position: absolute;
+
+			}
+
+			.album-1{
+				right: 3%;
+			    top: 50%;
+			    transform: translate(-50%,71%);
+			}
+
+			.album-2{
+				right: 31%;
+			    top: 50%;
+			    transform: translate(-50%,45%);
+			}
+
+			.album-3{
+				right: 3%;
+			    top: 50%;
+			    transform: translate(-50%,202%);
+			}
+
+			.album-4{
+				right: 35%;
+			    top: 50%;
+			    transform: translate(-50%,171%);
+			}
+
+			.album-5{
+				right: 21%;
+			    top: 50%;
+			    transform: translate(-50%,125%);
+			}
+
+
+
+			.album-6{
+				right: 13%;
+			    top: 50%;
+			    transform: translate(-50%,11%);
+			}
+		}
+
+		.custom-mix-title{
+			    transform: translate(-11%, 68%);
+			    left: 14%;
+			    font-size: 46px;
+		}
+
+		.custom-mix-text{
+			    left: 17%;
+			    transform: translate(-18%, 540%);
+
+			    p{
+			    	width: 58%;
+			    	text-align: left;
+			    }
+
+		}
+
+		.custom-mix-media-player{
+			visibility: visible;
+			width: 400px;
+			padding-bottom: 40px;
+			background-color: RGBA(40, 40, 40, 1.00);
+			position: absolute;
+		    left: 20%;
+		    transform: translate(-50%,682%);
+		    display: flex;
+		    flex-direction: column;
+		    justify-content: center;
+		    align-items: center;
+
+		}
+
+		.download-now{
+			visibility: visible;
+			width: 100%;
+		    position: absolute;
+		    left: 20%;
+		    transform: translate(-50%, 1640%);
+		    font-size: 40px;
+		    text-decoration: underline;
+		    display: flex;
+    		justify-content: space-between;
+    		width: 20%;
+
 		}
 	}
 
 	.social-container{
+
+		padding-bottom: 200vh;
+		overflow: hidden;
+
+		.social-form-container{
+			width: 100%;
+	    	position: absolute;	
+		    bottom: 0;
+		    display: flex;
+		    visibility: visible;
+
+	    	.form-text{
+	    		width: 16%;
+	    		font-size: 20px;
+	    		bottom: 0;
+	    	}
+	    }
+
+	    .posted-container{
+		visibility: visible;
+		position: absolute;
+	    left: 50%;
+	    top: 75%;
+	    transform: translate(-34%, -50%);
+	    font-size: 189px;
+	    width: 100%;
+	}
+
+		.social-form-inputs{
+			position: absolute;
+			right: 0;
+		}
+
+		.subscribe-text{
+		left: 50%;
+    	top: -18%;
+   		transform: translate(-50%,3200%);
+	}
+
+	.social-icons{
+		top: 41%;
+	    left: 51%;
+	    transform: translate(-50%,-50%);
+	    position: absolute;
+	    display: flex;
+	}
 
 		.more-container{
 			visibility: hidden;
@@ -836,10 +1074,45 @@ font-weight: 400;
 		}
 	}
 
-	.custom-mix-container{
-		width: 87%;
+	.social-container-title{
+		display: none;
 	}
 
+	.social-container-title-desktop{
+		width: 76%;
+	    position: absolute;
+	    left: 50%;
+	    top: 21%;
+	    transform: translate(-43%,-50%);
+	    font-size: 78px;
+	    display: flex;
+	    visibility: visible;
+
+	    h1{
+	    	span{
+	    		font-size: 60px;
+	    	}
+	    }
+	}
+
+
+
+
+}
+
+@media screen and (min-width: 1024px){
+// 	.custom-mix-container{
+// 		top: 59%;
+// 	}
+
+	.social-container{
+
+		.social-container-title-desktop{
+			visibility: visible;
+			font-size: 189px;
+			transform: translate(-50%, -50%);
+		}
+	}
 }
 
 // $(arrow).on('click', function() {

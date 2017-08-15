@@ -111,7 +111,7 @@ nav {
 
 .text-block-1 {
   width: 100%;
-  padding-bottom: 2500px;
+  padding-bottom: 100vh;
   position: relative;
   background-size: contain;
   background-repeat: no-repeat; }
@@ -228,7 +228,8 @@ nav {
     .timeline-container .years .y1982 {
       background-color: RGBA(220, 144, 72, 1);
       background-image: url(../../assets/img/timeline-1982.png);
-      background-repeat: no-repeat; }
+      background-repeat-y: no-repeat;
+      background-position-x: -400px; }
     .timeline-container .years .y1988 {
       background-color: RGBA(224, 168, 80, 1);
       background-image: url(../../assets/img/timeline-1988.png);
@@ -275,7 +276,9 @@ nav {
       left: 0; }
       .merch-sales-slider .slider .left-arrow img {
         width: 100%; }
-    .merch-sales-slider .slider .splatter {
+    .merch-sales-slider .slider .mi-wrap .splatter-2, .merch-sales-slider .slider .mi-wrap .splatter-3 {
+      display: none; }
+    .merch-sales-slider .slider .mi-wrap .splatter {
       background-image: url(../../assets/img/splatter-sweatshirt.png);
       position: absolute;
       width: 90%;
@@ -287,7 +290,7 @@ nav {
       /* top: -11%; */
       left: 50%;
       transform: translate(-50%, -50%); }
-      .merch-sales-slider .slider .splatter .mi-1 {
+      .merch-sales-slider .slider .mi-wrap .splatter .mi-1 {
         width: 70%;
         max-width: 70%;
         position: absolute;
@@ -295,7 +298,7 @@ nav {
         right: 0;
         left: 58%;
         transform: translate(-50%, -50%); }
-        .merch-sales-slider .slider .splatter .mi-1 img {
+        .merch-sales-slider .slider .mi-wrap .splatter .mi-1 img {
           width: 100%;
           position: relative;
           bottom: 159px;
@@ -305,17 +308,19 @@ nav {
   position: absolute;
   top: 43%;
   width: 100%; }
+  .custom-mix-container .download-now, .custom-mix-container .custom-mix-media-player {
+    visibility: hidden; }
   .custom-mix-container .custom-mix-title {
-    width: 100%;
+    width: 75%;
     position: absolute;
-    top: 207%;
+    top: 132%;
     left: 25%;
     transform: translate(-11%, -50%);
     font-size: 59px; }
   .custom-mix-container .custom-mix-text {
     position: absolute;
-    top: 247%;
-    left: 25%;
+    top: 155%;
+    left: 28%;
     transform: translate(-18%, -50%);
     font-size: 20px;
     text-align: center; }
@@ -374,6 +379,12 @@ nav {
   background-position-y: 4px;
   background-size: cover;
   padding-bottom: 931px; }
+  .social-container .social-container-title-desktop {
+    visibility: hidden; }
+  .social-container .social-form-container {
+    visibility: hidden; }
+  .social-container .posted-container {
+    visibility: hidden; }
   .social-container .social-container-title {
     text-align: center;
     position: relative;
@@ -401,14 +412,13 @@ nav {
     text-align: center; }
     .social-container .more-container h4 {
       font-size: 11px; }
-  .social-container .to-subscribe, .social-container form {
-    position: relative;
-    top: 600px;
-    text-align: center; }
   .social-container .band-arrow-container {
     position: absolute;
     display: flex;
-    bottom: 470px;
+    left: 50%;
+    bottom: 34%;
+    transform: translate(-50%, -50%);
+    width: 100%;
     justify-content: space-around;
     align-items: flex-end; }
     .social-container .band-arrow-container .left-arrow-white, .social-container .band-arrow-container .right-arrow-white {
@@ -431,110 +441,274 @@ img {
     transition: .8s;
     filter: blur(10px);
     background-attachment: fixed;
-    background-size: cover; }
+    background-size: cover;
+    background-position: center; }
     .band-drop-down.loaded {
       filter: blur(0px); }
   .band-name-banner {
-    left: 50%;
+    left: 48%;
     top: 50%;
-    transform: translate(-50%, 10%); }
+    transform: translate(-50%, 17%);
+    padding-bottom: 100vh; }
   .media-player {
     top: 10px;
     width: 50%;
-    left: 25%; }
+    left: 25%;
+    opacity: .75;
+    border: 2px solid white; }
   .text-block-1 .description-text {
     width: 100%; }
-  .text-block-4 .tb4-text {
-    bottom: 0;
-    top: 50%; }
-  .timeline-container .years {
-    width: 100%;
-    flex-direction: row;
-    justify-content: normal;
-    flex-wrap: wrap; }
-    .timeline-container .years .year {
-      width: 24.7%;
-      padding-bottom: 40%;
-      transition: all .8s; }
-      .timeline-container .years .year:hover {
-        padding-right: 400px;
-        padding-bottom: 40%; }
-      .timeline-container .years .year p {
-        transform: rotate(-90deg);
-        font-size: 100px;
-        top: 232%;
-        position: relative; }
-    .timeline-container .years .y1966 {
-      background-color: RGBA(71, 21, 59, 1);
-      background-image: url(../../assets/img/timeline-1966-vert.png);
-      background-repeat: no-repeat;
-      background-size: cover; }
-    .timeline-container .years .y1968 {
-      background-color: RGBA(97, 28, 55, 1);
-      background-image: url(../../assets/img/timeline-1968-vert.png);
-      background-repeat: no-repeat;
-      background-size: cover; }
-    .timeline-container .years .y1973 {
-      background-image: url(../../assets/img/timeline-1973-vert.png);
-      background-repeat: no-repeat;
-      background-size: cover; }
-    .timeline-container .years .y1975 {
-      background-color: RGBA(161, 48, 50, 1);
-      background-image: url(../../assets/img/timeline-1975-vert.png);
-      background-repeat: no-repeat;
-      background-size: cover; }
-    .timeline-container .years .y1976 {
-      background-color: RGBA(194, 80, 60, 1);
-      background-image: url(../../assets/img/timeline-1976-vert.png);
-      background-repeat: no-repeat;
-      background-size: cover; }
-    .timeline-container .years .y1980 {
-      background-color: RGBA(214, 113, 61, 1);
-      background-image: url(../../assets/img/timeline-1980-vert.png);
-      background-repeat: no-repeat;
-      background-size: cover; }
-    .timeline-container .years .y1982 {
-      background-color: RGBA(220, 144, 72, 1);
-      background-image: url(../../assets/img/timeline-1982-vert.png);
-      background-repeat: no-repeat;
-      background-size: cover; }
-    .timeline-container .years .y1988 {
-      background-color: RGBA(224, 168, 80, 1);
-      background-image: url(../../assets/img/timeline-1988-vert.png);
-      background-repeat: no-repeat;
-      background-size: cover; }
-    .timeline-container .years .y1994 {
-      background-color: RGBA(242, 202, 96, 1);
-      background-image: url(../../assets/img/timeline-1994-vert.png);
-      background-repeat: no-repeat;
-      background-size: cover; }
-  .merch-sales-slider .slider .right-arrow, .merch-sales-slider .slider .left-arrow {
-    visibility: hidden; }
-  .merch-sales-slider .slider .splatter {
-    width: 47%; }
-    .merch-sales-slider .slider .splatter .mi-1 {
-      width: 56%;
-      top: 162%; }
-  .merch-sales-slider .slider .splatter-2 {
-    background-image: url(../../assets/img/splatter-sweatshirt.png);
-    position: absolute;
-    width: 29%;
-    padding-bottom: 20%;
-    background-size: cover;
-    background-position-y: -184;
-    background-repeat: no-repeat;
-    left: 92%;
-    top: 64%;
-    transform: translate(-73%, -16%); }
-    .merch-sales-slider .slider .splatter-2 .mi-2 {
+    .text-block-1 .description-text h2 {
+      font-size: 180px; }
+      .text-block-1 .description-text h2 .tb1-left-animation {
+        position: absolute;
+        left: -68%;
+        top: 124%; }
+      .text-block-1 .description-text h2 .tb1-right-animation {
+        position: absolute;
+        right: -70%;
+        top: 180%; }
+  .text-block-4 {
+    background-position: center;
+    padding-bottom: 95%; }
+    .text-block-4 .tb4-text {
+      bottom: 0;
+      top: 50%; }
+  .timeline-container {
+    overflow: hidden; }
+    .timeline-container .years {
+      width: 200%;
+      flex-direction: row;
+      justify-content: normal; }
+      .timeline-container .years .year {
+        width: 24.7%;
+        padding-bottom: 40%;
+        transition: all .8s; }
+        .timeline-container .years .year:hover {
+          padding-right: 400px;
+          padding-bottom: 40%; }
+        .timeline-container .years .year p {
+          transform: rotate(-90deg);
+          font-size: 132px;
+          bottom: 7%;
+          position: absolute; }
+      .timeline-container .years .y1966 {
+        background-color: RGBA(71, 21, 59, 1);
+        background-image: url(../../assets/img/timeline-1966-vert.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1; }
+      .timeline-container .years .y1968 {
+        background-color: RGBA(97, 28, 55, 1);
+        background-image: url(../../assets/img/timeline-1968-vert.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 2; }
+      .timeline-container .years .y1973 {
+        background-image: url(../../assets/img/timeline-1973-vert.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 3; }
+      .timeline-container .years .y1975 {
+        background-color: RGBA(161, 48, 50, 1);
+        background-image: url(../../assets/img/timeline-1975-vert.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 4; }
+      .timeline-container .years .y1976 {
+        background-color: RGBA(194, 80, 60, 1);
+        background-image: url(../../assets/img/timeline-1976-vert.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 5; }
+      .timeline-container .years .y1980 {
+        background-color: RGBA(214, 113, 61, 1);
+        background-image: url(../../assets/img/timeline-1980-vert.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 6; }
+      .timeline-container .years .y1982 {
+        background-color: RGBA(220, 144, 72, 1);
+        background-image: url(../../assets/img/timeline-1982-vert.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 7;
+        background-position-x: 0px; }
+      .timeline-container .years .y1988 {
+        background-color: RGBA(224, 168, 80, 1);
+        background-image: url(../../assets/img/timeline-1988-vert.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 8; }
+      .timeline-container .years .y1994 {
+        background-color: RGBA(242, 202, 96, 1);
+        background-image: url(../../assets/img/timeline-1994-vert.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 9; }
+  .merch-sales-slider {
+    padding-bottom: 130%; }
+    .merch-sales-slider .slider .right-arrow, .merch-sales-slider .slider .left-arrow {
+      visibility: hidden; }
+    .merch-sales-slider .slider .mi-wrap .splatter {
+      width: 30%;
+      transform: translate(-144%, -50%); }
+      .merch-sales-slider .slider .mi-wrap .splatter .mi-1 {
+        width: 56%;
+        top: 135%; }
+    .merch-sales-slider .slider .mi-wrap .splatter-2 {
+      background-image: url(../../assets/img/splatter-sweatshirt.png);
       position: absolute;
-      left: 35%;
-      top: 28%; }
-  .social-container .more-container {
-    visibility: hidden; }
-  .social-container .band-arrow-container {
-    visibility: hidden; }
+      width: 29%;
+      padding-bottom: 20%;
+      background-size: cover;
+      background-position-y: -184;
+      background-repeat: no-repeat;
+      left: 62%;
+      top: 64%;
+      transform: translate(-73%, -29%);
+      display: block; }
+      .merch-sales-slider .slider .mi-wrap .splatter-2 .mi-2 {
+        position: absolute;
+        left: 35%;
+        top: 28%; }
+    .merch-sales-slider .slider .mi-wrap .splatter-3 {
+      display: block;
+      background-image: url(../../assets/img/splatter-sweatshirt.png);
+      position: absolute;
+      width: 29%;
+      padding-bottom: 21%;
+      background-size: cover;
+      background-position-y: -184;
+      background-repeat: no-repeat;
+      left: 92%;
+      top: 64%;
+      transform: translate(-73%, -29%); }
+      .merch-sales-slider .slider .mi-wrap .splatter-3 .mi-3 {
+        position: absolute;
+        left: 26%;
+        top: 28%; }
   .custom-mix-container {
-    width: 87%; } }
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .custom-mix-container .album-grid .album {
+      width: 15%;
+      position: absolute; }
+    .custom-mix-container .album-grid .album-1 {
+      right: 3%;
+      top: 50%;
+      transform: translate(-50%, 71%); }
+    .custom-mix-container .album-grid .album-2 {
+      right: 31%;
+      top: 50%;
+      transform: translate(-50%, 45%); }
+    .custom-mix-container .album-grid .album-3 {
+      right: 3%;
+      top: 50%;
+      transform: translate(-50%, 202%); }
+    .custom-mix-container .album-grid .album-4 {
+      right: 35%;
+      top: 50%;
+      transform: translate(-50%, 171%); }
+    .custom-mix-container .album-grid .album-5 {
+      right: 21%;
+      top: 50%;
+      transform: translate(-50%, 125%); }
+    .custom-mix-container .album-grid .album-6 {
+      right: 13%;
+      top: 50%;
+      transform: translate(-50%, 11%); }
+    .custom-mix-container .custom-mix-title {
+      transform: translate(-11%, 68%);
+      left: 14%;
+      font-size: 46px; }
+    .custom-mix-container .custom-mix-text {
+      left: 17%;
+      transform: translate(-18%, 540%); }
+      .custom-mix-container .custom-mix-text p {
+        width: 58%;
+        text-align: left; }
+    .custom-mix-container .custom-mix-media-player {
+      visibility: visible;
+      width: 400px;
+      padding-bottom: 40px;
+      background-color: RGBA(40, 40, 40, 1);
+      position: absolute;
+      left: 20%;
+      transform: translate(-50%, 682%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    .custom-mix-container .download-now {
+      visibility: visible;
+      width: 100%;
+      position: absolute;
+      left: 20%;
+      transform: translate(-50%, 1640%);
+      font-size: 40px;
+      text-decoration: underline;
+      display: flex;
+      justify-content: space-between;
+      width: 20%; }
+  .social-container {
+    padding-bottom: 200vh;
+    overflow: hidden; }
+    .social-container .social-form-container {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      visibility: visible; }
+      .social-container .social-form-container .form-text {
+        width: 16%;
+        font-size: 20px;
+        bottom: 0; }
+    .social-container .posted-container {
+      visibility: visible;
+      position: absolute;
+      left: 50%;
+      top: 75%;
+      transform: translate(-34%, -50%);
+      font-size: 189px;
+      width: 100%; }
+    .social-container .social-form-inputs {
+      position: absolute;
+      right: 0; }
+    .social-container .subscribe-text {
+      left: 50%;
+      top: -18%;
+      transform: translate(-50%, 3200%); }
+    .social-container .social-icons {
+      top: 41%;
+      left: 51%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      display: flex; }
+    .social-container .more-container {
+      visibility: hidden; }
+    .social-container .band-arrow-container {
+      visibility: hidden; }
+  .social-container-title {
+    display: none; }
+  .social-container-title-desktop {
+    width: 76%;
+    position: absolute;
+    left: 50%;
+    top: 21%;
+    transform: translate(-43%, -50%);
+    font-size: 78px;
+    display: flex;
+    visibility: visible; }
+    .social-container-title-desktop h1 span {
+      font-size: 60px; } }
+
+@media screen and (min-width: 1024px) {
+  .social-container .social-container-title-desktop {
+    visibility: visible;
+    font-size: 189px;
+    transform: translate(-50%, -50%); } }
 
 /*# sourceMappingURL=main.css.map */
