@@ -103,7 +103,9 @@ nav {
       width: 100%; }
   .media-player .song-title {
     position: relative;
-    top: 5px; }
+    top: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates Medium Italic', sans-serif; }
   .media-player .artist-album {
     position: relative; }
     .media-player .artist-album h1 {
@@ -154,10 +156,15 @@ nav {
   background-color: #140403;
   background-image: url(../../assets/img/led-zeppelin.png);
   background-size: cover;
-  padding-bottom: 165%;
-  background-repeat: no-repeat; }
+  padding-bottom: 100vh;
+  background-repeat: no-repeat;
+  background-position: center; }
   .text-block-4 img {
     width: 100%; }
+  .text-block-4 .robert {
+    display: none; }
+  .text-block-4 .jimmy {
+    display: none; }
   .text-block-4 .tb4-text {
     position: absolute;
     top: 30%;
@@ -276,6 +283,8 @@ nav {
       left: 0; }
       .merch-sales-slider .slider .left-arrow img {
         width: 100%; }
+    .merch-sales-slider .slider .mi-wrap .merch-details {
+      visibility: hidden; }
     .merch-sales-slider .slider .mi-wrap .splatter-2, .merch-sales-slider .slider .mi-wrap .splatter-3 {
       display: none; }
     .merch-sales-slider .slider .mi-wrap .splatter {
@@ -442,6 +451,46 @@ img {
     padding-top: 2.5%; }
     nav .the-best-text img {
       width: 190%; }
+  .scroll-animation {
+    position: absolute;
+    bottom: 0;
+    width: 10%;
+    height: 10%;
+    transform: translate(430%, -50%); }
+    .scroll-animation .scroll-bar-1-top {
+      position: absolute;
+      width: 60%;
+      background: white;
+      height: 4px;
+      left: 25%; }
+    .scroll-animation .scroll-bar-2 {
+      position: absolute;
+      width: 50%;
+      background: white;
+      height: 4px;
+      left: 30%;
+      top: 30%; }
+    .scroll-animation .scroll-bar-3 {
+      position: absolute;
+      width: 40%;
+      background: white;
+      height: 4px;
+      left: 35%;
+      top: 60%; }
+    .scroll-animation .scroll-bar-4 {
+      position: absolute;
+      width: 30%;
+      background: white;
+      height: 4px;
+      left: 40%;
+      top: 90%; }
+    .scroll-animation .scroll-bar-5-bottom {
+      position: absolute;
+      width: 20%;
+      background: white;
+      height: 4px;
+      left: 45%;
+      top: 120%; }
   .band-drop-down {
     background-image: url(../../assets/img/landing-2.png);
     transition: .8s;
@@ -490,19 +539,34 @@ img {
     background-position: center;
     padding-bottom: 95%;
     overflow: hidden; }
+    .text-block-4 .robert {
+      display: block;
+      position: absolute;
+      bottom: 1%;
+      width: 129%;
+      left: -17.4444%;
+      z-index: 10000; }
+    .text-block-4 .jimmy {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      width: 133%;
+      left: -18%; }
     .text-block-4 .tb4-text {
       bottom: 0;
       top: 50%;
       position: absolute; }
       .text-block-4 .tb4-text h3 {
         position: absolute;
-        right: -35%;
+        top: 119%;
+        right: -37%;
         font-size: 12vw; }
       .text-block-4 .tb4-text h1 {
         position: absolute;
         left: -100%;
         top: 100%;
-        font-size: 12vw; }
+        font-size: 14vw;
+        width: 100%; }
   .timeline-container {
     overflow: hidden; }
     .timeline-container .years {
@@ -515,13 +579,20 @@ img {
         padding-bottom: 40%;
         transition: all .8s; }
         .timeline-container .years .year:hover {
-          padding-right: 400px;
-          padding-bottom: 40%; }
+          padding-bottom: 40%;
+          transform: scale(1.2); }
         .timeline-container .years .year p {
           transform: rotate(-90deg);
           font-size: 132px;
-          bottom: 7%;
+          bottom: 13%;
           position: absolute; }
+          .timeline-container .years .year p:hover {
+            color: pink; }
+      .timeline-container .years .year-active {
+        padding-right: 25%;
+        padding-bottom: 40%; }
+        .timeline-container .years .year-active:hover {
+          transform: scale(1); }
       .timeline-container .years .y1966 {
         background-color: RGBA(71, 21, 59, 1);
         background-image: url(../../assets/img/timeline-1966-vert.png);
@@ -588,6 +659,20 @@ img {
       .merch-sales-slider .slider .mi-wrap .splatter .mi-1 {
         width: 56%;
         top: 135%; }
+        .merch-sales-slider .slider .mi-wrap .splatter .mi-1 .merch-details {
+          visibility: visible;
+          position: absolute;
+          top: 57%;
+          left: 23%;
+          text-align: center;
+          line-height: 1.2;
+          font-family: din-2014-black-itallic, sans-serif;
+          font-weight: 5; }
+          .merch-sales-slider .slider .mi-wrap .splatter .mi-1 .merch-details h1 {
+            font-size: 3vw; }
+          .merch-sales-slider .slider .mi-wrap .splatter .mi-1 .merch-details h2 {
+            font-family: din-2014, sans-serif;
+            font-size: 1.5rem; }
     .merch-sales-slider .slider .mi-wrap .splatter-2 {
       background-image: url(../../assets/img/splatter-sweatshirt.png);
       position: absolute;
@@ -604,6 +689,20 @@ img {
         position: absolute;
         left: 35%;
         top: 28%; }
+        .merch-sales-slider .slider .mi-wrap .splatter-2 .mi-2 .merch-details {
+          visibility: visible;
+          position: absolute;
+          top: 176%;
+          left: 23%;
+          text-align: center;
+          line-height: 1.2;
+          font-family: din-2014-black-itallic, sans-serif;
+          font-weight: 5; }
+          .merch-sales-slider .slider .mi-wrap .splatter-2 .mi-2 .merch-details h1 {
+            font-size: 3vw; }
+          .merch-sales-slider .slider .mi-wrap .splatter-2 .mi-2 .merch-details h2 {
+            font-family: din-2014, sans-serif;
+            font-size: 1.5rem; }
     .merch-sales-slider .slider .mi-wrap .splatter-3 {
       display: block;
       background-image: url(../../assets/img/splatter-sweatshirt.png);
@@ -620,6 +719,20 @@ img {
         position: absolute;
         left: 26%;
         top: 28%; }
+        .merch-sales-slider .slider .mi-wrap .splatter-3 .mi-3 .merch-details {
+          visibility: visible;
+          position: absolute;
+          top: 114%;
+          left: 32%;
+          text-align: center;
+          line-height: 1.2;
+          font-family: din-2014-black-itallic, sans-serif;
+          font-weight: 5; }
+          .merch-sales-slider .slider .mi-wrap .splatter-3 .mi-3 .merch-details h1 {
+            font-size: 3vw; }
+          .merch-sales-slider .slider .mi-wrap .splatter-3 .mi-3 .merch-details h2 {
+            font-family: din-2014, sans-serif;
+            font-size: 1.5rem; }
   .custom-mix-container {
     width: 100%;
     top: 50%;
@@ -701,17 +814,17 @@ img {
     .social-container .posted-container {
       visibility: visible;
       position: absolute;
-      left: 50%;
+      left: 39%;
       top: 75%;
-      transform: translate(-34%, -50%);
-      font-size: 189px;
+      transform: translate(-35%, -50%);
+      font-size: 15vw;
       width: 100%; }
     .social-container .social-form-inputs {
       position: absolute;
       right: 0; }
     .social-container .subscribe-text {
       left: 50%;
-      top: -18%;
+      top: -62%;
       transform: translate(-50%, 3200%); }
     .social-container .social-icons {
       top: 41%;
@@ -726,9 +839,9 @@ img {
   .social-container-title {
     display: none; }
   .social-container-title-desktop {
-    width: 76%;
+    width: 100%;
     position: absolute;
-    left: 50%;
+    left: 52%;
     top: 21%;
     transform: translate(-43%, -50%);
     font-size: 78px;
@@ -740,7 +853,7 @@ img {
 @media screen and (min-width: 1024px) {
   .social-container .social-container-title-desktop {
     visibility: visible;
-    font-size: 189px;
+    font-size: 15vw;
     transform: translate(-50%, -50%); } }
 
 /*# sourceMappingURL=main.css.map */
