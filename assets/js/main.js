@@ -118,6 +118,7 @@ for (let i = 0; i < yearContainer.length; i++) {
   for (let i = 0; i < yearContainer.length; i++) {
     if(yearContainer[i].classList.contains('year-active')) {
       yearContainer[i].classList.remove('year-active');
+      // yearContainer[i].classList.remove('background');
     }
   }
   this.classList.add('year-active');
@@ -206,95 +207,95 @@ scrollAnimation.add( TweenMax.to('.scroll-bar-5-bottom' , .4 , {
 
 
 
-  document.querySelector('.y1966').addEventListener('click', function(){
-  if(this.classList.contains('year-active')){
-    console.log("frrr")
-    this.style.backgroundImage = 'none';
-    this.style.backgroundColor = 'rgb(85,0,63)';
-  } if(!this.classList.contains('year-active')){
-    this.style.backgroundImage = "url('../../assets/img/timeline-1966-vert.png')";
-  }
-});
+//   document.querySelector('.y1966').addEventListener('click', function(){
+//   if(this.classList.contains('year-active')){
+//     console.log("frrr")
+//     this.style.backgroundImage = 'none';
+//     this.style.backgroundColor = 'rgb(85,0,63)';
+//   } if(!this.classList.contains('year-active')){
+//     this.style.backgroundImage = "url('../../assets/img/timeline-1966-vert.png')";
+//   }
+// });
 
-document.querySelector('.y1968').addEventListener('click', function(){
-  if(this.classList.contains('year-active')){
-    console.log("frrr")
-    this.style.backgroundImage = 'none';
-    this.style.backgroundColor = 'rgb(115,0,54)';
-  } if(!this.classList.contains('year-active')){
-    this.style.backgroundImage = "url('../../assets/img/timeline-1968-vert.png')";
-  }
-});
+// document.querySelector('.y1968').addEventListener('click', function(){
+//   if(this.classList.contains('year-active')){
+//     console.log("frrr")
+//     this.style.backgroundImage = 'none';
+//     this.style.backgroundColor = 'rgb(115,0,54)';
+//   } if(!this.classList.contains('year-active')){
+//     this.style.backgroundImage = "url('../../assets/img/timeline-1968-vert.png')";
+//   }
+// });
 
-document.querySelector('.y1973').addEventListener('click', function(){
-  if(this.classList.contains('year-active')){
-    console.log("frrr")
-    this.style.backgroundImage = 'none';
-    this.style.backgroundColor = 'rgb(156,0,40)';
-  } if(!this.classList.contains('year-active')){
-    this.style.backgroundImage = "url('../../assets/img/timeline-1973-vert.png')";
-  }
-});
+// document.querySelector('.y1973').addEventListener('click', function(){
+//   if(this.classList.contains('year-active')){
+//     console.log("frrr")
+//     this.style.backgroundImage = 'none';
+//     this.style.backgroundColor = 'rgb(156,0,40)';
+//   } if(!this.classList.contains('year-active')){
+//     this.style.backgroundImage = "url('../../assets/img/timeline-1973-vert.png')";
+//   }
+// });
 
-document.querySelector('.y1975').addEventListener('click', function(){
-  if(this.classList.contains('year-active')){
-    console.log("frrr")
-    this.style.backgroundImage = 'none';
-    this.style.backgroundColor = 'rgb(190,0,39)';
-  } if(!this.classList.contains('year-active')){
-    this.style.backgroundImage = "url('../../assets/img/timeline-1975-vert.png')";
-  }
-});
+// document.querySelector('.y1975').addEventListener('click', function(){
+//   if(this.classList.contains('year-active')){
+//     console.log("frrr")
+//     this.style.backgroundImage = 'none';
+//     this.style.backgroundColor = 'rgb(190,0,39)';
+//   } if(!this.classList.contains('year-active')){
+//     this.style.backgroundImage = "url('../../assets/img/timeline-1975-vert.png')";
+//   }
+// });
 
-document.querySelector('.y1976').addEventListener('click', function(){
-  if(this.classList.contains('year-active')){
-    console.log("frrr")
-    this.style.backgroundImage = 'none';
-    this.style.backgroundColor = 'rgb(225,55,37)';
-  } if(!this.classList.contains('year-active')){
-    this.style.backgroundImage = "url('../../assets/img/timeline-1976-vert.png')";
-  }
-});
+// document.querySelector('.y1976').addEventListener('click', function(){
+//   if(this.classList.contains('year-active')){
+//     console.log("frrr")
+//     this.style.backgroundImage = 'none';
+//     this.style.backgroundColor = 'rgb(225,55,37)';
+//   } if(!this.classList.contains('year-active')){
+//     this.style.backgroundImage = "url('../../assets/img/timeline-1976-vert.png')";
+//   }
+// });
 
-document.querySelector('.y1980').addEventListener('click', function(){
-  if(this.classList.contains('year-active')){
-    console.log("frrr")
-    this.style.backgroundImage = 'none';
-    this.style.backgroundColor = 'rgb(244,98,0)';
-  } if(!this.classList.contains('year-active')){
-    this.style.backgroundImage = "url('../../assets/img/timeline-1980-vert.png')";
-  }
-});
+// document.querySelector('.y1980').addEventListener('click', function(){
+//   if(this.classList.contains('year-active')){
+//     console.log("frrr")
+//     this.style.backgroundImage = 'none';
+//     this.style.backgroundColor = 'rgb(244,98,0)';
+//   } if(!this.classList.contains('year-active')){
+//     this.style.backgroundImage = "url('../../assets/img/timeline-1980-vert.png')";
+//   }
+// });
 
-document.querySelector('.y1982').addEventListener('click', function(){
-  if(this.classList.contains('year-active')){
-    console.log("frrr")
-    this.style.backgroundImage = 'none';
-    this.style.backgroundColor = 'rgb(246,137,8)';
-  } if(!this.classList.contains('year-active')){
-    this.style.backgroundImage = "url('../../assets/img/timeline-1982-vert.png')";
-  }
-});
+// document.querySelector('.y1982').addEventListener('click', function(){
+//   if(this.classList.contains('year-active')){
+//     console.log("frrr")
+//     this.style.backgroundImage = 'none';
+//     this.style.backgroundColor = 'rgb(246,137,8)';
+//   } if(!this.classList.contains('year-active')){
+//     this.style.backgroundImage = "url('../../assets/img/timeline-1982-vert.png')";
+//   }
+// });
 
-document.querySelector('.y1988').addEventListener('click', function(){
-  if(this.classList.contains('year-active')){
-    console.log("frrr")
-    this.style.backgroundImage = 'none';
-    this.style.backgroundColor = 'rgb(244,165,0)';
-  } if(!this.classList.contains('year-active')){
-    this.style.backgroundImage = "url('../../assets/img/timeline-1988-vert.png')";
-  }
-});
+// document.querySelector('.y1988').addEventListener('click', function(){
+//   if(this.classList.contains('year-active')){
+//     console.log("frrr")
+//     this.style.backgroundImage = 'none';
+//     this.style.backgroundColor = 'rgb(244,165,0)';
+//   } if(!this.classList.contains('year-active')){
+//     this.style.backgroundImage = "url('../../assets/img/timeline-1988-vert.png')";
+//   }
+// });
 
-document.querySelector('.y1994').addEventListener('click', function(){
-  if(this.classList.contains('year-active')){
-    console.log("frrr")
-    this.style.backgroundImage = 'none';
-    this.style.backgroundColor = 'rgb(255,202,14)';
-  } if(!this.classList.contains('year-active')){
-    this.style.backgroundImage = "url('../../assets/img/timeline-1994-vert.png')";
-  }
-});
+// document.querySelector('.y1994').addEventListener('click', function(){
+//   if(this.classList.contains('year-active')){
+//     console.log("frrr")
+//     this.style.backgroundImage = 'none';
+//     this.style.backgroundColor = 'rgb(255,202,14)';
+//   } if(!this.classList.contains('year-active')){
+//     this.style.backgroundImage = "url('../../assets/img/timeline-1994-vert.png')";
+//   }
+// });
 
 
 

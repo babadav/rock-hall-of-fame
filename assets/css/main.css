@@ -646,7 +646,35 @@ img {
         background-image: url(../../assets/img/timeline-1994-vert.png);
         background-repeat: no-repeat;
         background-size: cover;
-        z-index: 9; }
+        z-index: 9;
+        transition: .5s all; }
+  .timeline-container .years .y1966.year-active {
+    background-image: none;
+    background-color: #55003f; }
+  .timeline-container .years .y1968.year-active {
+    background-image: none;
+    background-color: #730036; }
+  .timeline-container .years .y1973.year-active {
+    background-image: none;
+    background-color: #730036; }
+  .timeline-container .years .y1975.year-active {
+    background-image: none;
+    background-color: #be0027; }
+  .timeline-container .years .y1976.year-active {
+    background-image: none;
+    background-color: #e13725; }
+  .timeline-container .years .y1980.year-active {
+    background-image: none;
+    background-color: #f46200; }
+  .timeline-container .years .y1982.year-active {
+    background-image: none;
+    background-color: #f68908; }
+  .timeline-container .years .y1988.year-active {
+    background-image: none;
+    background-color: #f4a500; }
+  .timeline-container .years .y1994.year-active {
+    background-image: none;
+    background-color: #ffca0e; }
   .merch-sales-slider {
     padding-bottom: 130%; }
     .merch-sales-slider .merch-title h1 {

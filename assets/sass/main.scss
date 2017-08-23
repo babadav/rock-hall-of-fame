@@ -1008,8 +1008,54 @@ font-weight: 400;
 					background-repeat: no-repeat;
 					background-size: cover;
 					z-index: 9;
+					transition:.5s all;
 				}
 		}
+	}
+
+	.timeline-container .years .y1966.year-active {
+		background-image:none;
+		background-color:rgb(85,0,63);
+	}
+
+	.timeline-container .years .y1968.year-active {
+		background-image:none;
+		background-color: rgb(115,0,54);
+	}
+
+	.timeline-container .years .y1973.year-active {
+		background-image:none;
+		background-color: rgb(115,0,54);
+	}
+
+	.timeline-container .years .y1975.year-active {
+		background-image:none;
+		background-color: rgb(190,0,39);
+	}
+
+	.timeline-container .years .y1976.year-active {
+		background-image:none;
+		background-color: rgb(225,55,37);
+	}
+
+	.timeline-container .years .y1980.year-active {
+		background-image:none;
+		background-color: rgb(244,98,0);
+	}
+
+	.timeline-container .years .y1982.year-active {
+		background-image:none;
+		background-color: rgb(246,137,8);
+	}
+
+	.timeline-container .years .y1988.year-active {
+		background-image:none;
+		background-color: rgb(244,165,0);
+	}
+
+	.timeline-container .years .y1994.year-active {
+		background-image:none;
+		background-color: rgb(255,202,14);
 	}
 
 	.merch-sales-slider{
@@ -1357,6 +1403,8 @@ font-weight: 400;
 	}
 }
 
+
+	
 // $(arrow).on('click', function() {
 // 	move left 
 // 	})
